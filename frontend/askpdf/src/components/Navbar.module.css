@@ -1,0 +1,176 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  color: white;
+  position: sticky;
+  top: 0;
+  box-shadow: 0-8px 25px rgba(0, 0, 0, 0.22);
+}
+
+nav .title {
+  font-size: 1.5rem;
+  margin: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+}
+
+nav ul li a:not(.active):hover {
+  background-color: #172554;
+}
+
+nav .menu {
+  display: none;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+}
+
+nav .menu span {
+  height: 0.4rem;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.2rem;
+}
+
+.FileInput {
+  display: none;
+}
+
+.NavbarGroup {
+  cursor: pointer;
+  border: 1px solid #000;
+  padding: 9px 33px 8px 36px;
+  background-color: transparent;
+  border-radius: 8px;
+  flex-direction: row;
+  gap: 12px;
+  flex-shrink: 0;
+  white-space: nowrap;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-right: 2rem;
+}
+.NavbarGroup:hover {
+  background-color: rgba(51, 51, 51, 0.09);
+  border: 1px solid #333;
+  box-sizing: border-box;
+}
+
+.NavFrame {
+  height: 39px;
+  width: 180px;
+  position: relative;
+  border-radius: 8px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  display: none;
+}
+
+.PlusIcon {
+  position: relative;
+  z-index: 1;
+}
+.PlusIcon {
+  height: 18px;
+  width: 18px;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 18px;
+}
+
+.UploadPDF {
+  position: relative;
+  z-index: 1;
+  font-size: 14px;
+  color: #000;
+  text-align: left;
+  display: inline-block;
+  min-width: 79px;
+}
+
+.FileComponent {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 480px) {
+  nav .menu {
+    display: flex;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .NavbarGroup {
+    margin-right: 0rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+
+  nav ul.open {
+    display: flex;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li a {
+    margin: 0.2rem 0.5rem;
+  }
+}
+.FileIcon {
+  height: 27px;
+  width: 13.3px;
+  position: relative;
+  border: 0.8px solid rgba(15, 169, 88, 0.44);
+  box-sizing: border-box;
+  width: 30px;
+  padding: 3px;
+}
+.FileName {
+  position: relative;
+  line-height: 17px;
+  display: inline-block;
+  min-width: 65px;
+  color: #0fa958;
+  font-size: 14px;
+  margin-left: 10px;
+  font-weight: bold;
+}

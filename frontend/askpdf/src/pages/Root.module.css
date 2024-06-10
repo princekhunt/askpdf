@@ -1,0 +1,56 @@
+.root {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.sendAMessage {
+  width: 184.8px;
+  line-height: 22px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.InputArea {
+  padding: 16px 34px 14px 35px;
+  font-size: 17px;
+  color: #6e7583;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  position: relative;
+  box-shadow: 0 7px 30px rgba(102, 102, 102, 0.1);
+  border-radius: 17px;
+  border: 1px solid #e4e8ee;
+  box-sizing: border-box;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.InputField {
+  position: relative;
+
+  width: 100%;
+  min-height: 4rem;
+}
+
+.InputSubmit {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0 1.5rem;
+  cursor: pointer;
+  margin-top: 7px;
+  margin-right: 4em;
+  height: 40px;
+}
+@media screen and (max-width: 768px) {
+  .InputSubmit {
+    margin-right: 1em;
+    height: 30px;
+    margin-top: 10px;
+  }
+}

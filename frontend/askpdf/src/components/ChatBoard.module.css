@@ -1,0 +1,102 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.Image {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+}
+.FrameImage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 5px 0 0;
+}
+.FrameContent {
+  flex: 1;
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 28px;
+  display: flex;
+  min-width: 750px;
+  max-width: 100%;
+  z-index: 1;
+  align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  .FrameContent {
+    min-width: 300px;
+  }
+}
+
+.Frame {
+  align-self: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 24px;
+  font-size: 15px;
+  color: #1b1f2a;
+  margin-top: 2rem;
+}
+
+.boardchild,
+.Frame {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+  padding-left: 7rem;
+}
+
+@media screen and (max-width: 480px) {
+  .explaination,
+  .boardchild,
+  .Frame {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .explaination,
+  .boardchild,
+  .Frame {
+    padding-left: 0;
+  }
+}
+
+.boardchild {
+  flex: 1;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.board {
+  width: 1218px;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 5px 15px;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 24px;
+  color: #fff;
+  height: 300px;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  min-height: calc(100vh - 15rem);
+}
+@media screen and (max-width: 480px) {
+  .board {
+    width: 100%;
+    padding: 0 5px 150px;
+    min-height: calc(100vh - 25rem);
+  }
+}
+
+.board::-webkit-scrollbar {
+  display: none;
+}
